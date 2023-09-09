@@ -16,7 +16,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define KernelPackage/qmi_wwan_q
   SUBMENU:=WWAN Support
-  CATEGORY:=iyunlink
+  CATEGORY:=LINK4ALL
   TITLE:=Quectel Linux USB QMI WWAN Driver
   DEPENDS:=+kmod-usb-net +kmod-usb-wdm
   FILES:=$(PKG_BUILD_DIR)/qmi_wwan_q.ko

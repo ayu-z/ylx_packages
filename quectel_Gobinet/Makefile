@@ -16,7 +16,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define KernelPackage/gobinet
   SUBMENU:=WWAN Support
-  CATEGORY:=iyunlink
+  CATEGORY:=LINK4ALL
   TITLE:=Quectel Linux USB Gobinet Driver
   DEPENDS:=+kmod-usb-net
   FILES:=$(PKG_BUILD_DIR)/GobiNet.ko
