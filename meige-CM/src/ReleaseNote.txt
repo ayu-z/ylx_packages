@@ -1,0 +1,30 @@
+MIEG_LTE_ConnectManager_Linux&Android_V1.4.4]
+Date:   2022/10/31
+enhancement:
+1.Implement help message.
+
+root@zhangqingyun:/home/zhangqingyun/Desktop/qmi_wwan_m/Meig-CM# ./Meig-CM -h
+[10-31_15:11:15:884] Meig_QConnectManager_Linux_V1.4.4
+[10-31_15:11:15:884] Usage: ./Meig-CM [options]
+[10-31_15:11:15:884] -s [apn [user password auth]]          Set apn/user/password/auth get from your network provider
+[10-31_15:11:15:884] -p pincode                             Verify sim card pin if sim card is locked
+[10-31_15:11:15:884] -f logfilename                         Save log message of this program to file
+[10-31_15:11:15:884] -u usbmonlog filename                  Save usbmon log of this program to file
+[10-31_15:11:15:884] -i interface                           Specify network interface(default auto-detect)
+[10-31_15:11:15:884] -4                                     IPv4 protocol
+[10-31_15:11:15:884] -6                                     IPv6 protocol
+[10-31_15:11:15:884] -m muxID                               Specify muxid when set multi-pdn data connection.
+[10-31_15:11:15:884] -n channelID                           Specify channelID when set multi-pdn data connection(default 1).
+[10-31_15:11:15:884] -k channelID                           Send SIGINT to meig-CM which multi-pdn is channelID.
+[10-31_15:11:15:884] -r                                     Detach and attach kernel driver before open device.
+[10-31_15:11:15:884] -b                                     enable network interface bridge function(default 0).
+[10-31_15:11:15:884] [Examples]
+[10-31_15:11:15:884] Example 1: ./Meig-CM 
+[10-31_15:11:15:884] Example 2: ./Meig-CM -s 3gnet 
+[10-31_15:11:15:884] Example 3: ./Meig-CM -s 3gnet carl 1234 0 -p 1234 -f gobinet_log.txt
+root@zhangqingyun:/home/zhangqingyun/Desktop/qmi_wwan_m/Meig-CM# 
+
+2. add sdx55 qmap version to v9 to improve dl rate
+
+   
+
